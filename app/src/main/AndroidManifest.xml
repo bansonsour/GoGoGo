@@ -64,6 +64,10 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="4YPBZ-7RJK4-LFVU2-DSG6P-AWNW7-GCFGS" />
+
         <!-- 百度地图开发者 Key -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"

@@ -23,3 +23,10 @@
 -keep class vi.com.** {*;}
 -keep class com.baidu.vi.** {*;}
 -dontwarn com.baidu.**
+
+-keep class com.tencent.tencentmap.**{*;}
+-keep class com.tencent.map.**{*;}
+-keep class com.tencent.beacontmap.**{*;}
+-keep class navsns.**{*;}
+-dontwarn com.qq.**
+-dontwarn com.tencent.**

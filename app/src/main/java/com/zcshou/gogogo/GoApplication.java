@@ -16,6 +16,7 @@ import com.elvishew.xlog.printer.file.FilePrinter;
 import com.elvishew.xlog.printer.file.backup.NeverBackupStrategy;
 import com.elvishew.xlog.printer.file.clean.FileLastModifiedCleanStrategy;
 import com.elvishew.xlog.printer.file.naming.ChangelessFileNameGenerator;
+import com.zcshou.client.RuntimeInfo;
 
 import java.io.File;
 
@@ -42,6 +43,7 @@ public class GoApplication extends Application {
         }
 
         initXlog();
+        RuntimeInfo.sAppContext = this;
     }
 
     /**

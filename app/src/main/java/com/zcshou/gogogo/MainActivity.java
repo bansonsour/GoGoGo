@@ -97,6 +97,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.zcshou.client.LocationClientFlavor;
 import com.zcshou.service.ServiceGo;
 import com.zcshou.database.DataBaseHistoryLocation;
 import com.zcshou.database.DataBaseHistorySearch;
@@ -232,6 +233,8 @@ public class MainActivity extends BaseActivity implements SensorEventListener {
         initUpdateVersion();
 
         checkUpdateVersion(false);
+
+        LocationClientFlavor.INSTANCE.start();
     }
 
     @Override
